@@ -17,8 +17,9 @@ import lombok.NoArgsConstructor;
 public class Cliente {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long email;
-	private Long nome;
-	private Long telefone;
+	private Long id;
+	private String email;
+	private String nome;
+	private String telefone;
 
 }

@@ -19,9 +19,10 @@ import lombok.NoArgsConstructor;
 public class ItemVenda {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
 	private int quantidade;
 	private double valor_unitario;
-	private Long id;
+	
 	
 	@ManyToOne
 	@JoinColumn(name = "id_produto", nullable = false)
